@@ -33,6 +33,23 @@
   },
 
   {
+    "id": "personalized-for-utiquery",
+    "fields": {
+      "title": "Home",
+      "description": "UTI QUERY."
+    },
+    "pz": {
+      "crit": [
+        {
+          "l": "utiquery",
+          "op": ">",
+          "r": 0
+        }
+      ]
+    }
+  },
+
+  {
     "id": "default",
     "fields": {
       "title": "Home",

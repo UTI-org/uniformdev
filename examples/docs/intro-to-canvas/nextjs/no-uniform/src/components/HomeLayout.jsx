@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import Body from "./Body";
+import Hero from "./Hero";
 import Footer from "./Footer";
 
 import { Personalize } from "@uniformdev/context-react";
@@ -14,6 +15,11 @@ export default function HomeLayout({ fields }) {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Personalize
+        variations={variants}
+        name="heroPersonalized"
+        component={Hero}
+      />
       <Personalize
         variations={variants}
         name="bodyPersonalized"

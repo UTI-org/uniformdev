@@ -26,6 +26,15 @@
     }
   },
   {
+    "id": "andrewarchitecture",
+    "url": "/andrewarchitecture",
+    "type": "topic",
+    "fields": {
+      "title": "Andy Arch",
+      "description": "Content about architecture."
+    }
+  },
+  {
     "id": "authoring",
     "url": "/authoring",
     "type": "topic",

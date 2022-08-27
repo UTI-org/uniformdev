@@ -1,0 +1,42 @@
+[
+  {
+    "id": "personalized-for-architecture",
+    "fields": {
+      "title": "Home",
+      "description": "You triggered the architecture signal."
+    },
+    "pz": {
+      "crit": [
+        {
+          "l": "architecturePageView",
+          "op": ">",
+          "r": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "personalized-for-architectureandy",
+    "fields": {
+      "title": "Home",
+      "description": "You triggered the andrew andrew architecture signal."
+    },
+    "pz": {
+      "crit": [
+        {
+          "l": "andrewArchitecturePageView",
+          "op": ">",
+          "r": 0
+        }
+      ]
+    }
+  },
+
+  {
+    "id": "default",
+    "fields": {
+      "title": "Home",
+      "description": "As you navigate around, content will change."
+    }
+  }
+]

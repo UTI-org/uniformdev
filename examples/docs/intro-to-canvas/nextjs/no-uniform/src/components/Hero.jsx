@@ -1,12 +1,19 @@
 import Image from "next/image";
 import styles from "../../styles/hero.module.css";
 
+import content from "../../content/content.json";
+
 const { heroContent, heroWrapper, imageWrapper } = styles;
 
 const IMAGE_URL =
   "https://www.uti.edu/images/default-source/tests/programs/image-test-set-c/uti-technician-training-programs-schools-test-set-c-desktop.webp?sfvrsn=40d531bd_5";
 
-export default () => {
+export default (props) => {
+  console.log("the props" + props);
+  const { fields } = props;
+  const title = fields?.title;
+  const heroHeadline = fields?.heroHeadline;
+  const heroText = fields?.heroText;
   return (
     <div className={heroWrapper}>
       <div className={imageWrapper}>
@@ -21,8 +28,8 @@ export default () => {
       </div>
 
       <div className={heroContent}>
-        <h1>Hero Image</h1>
-        <p>UTI Hero Content Right Here</p>
+        <h1>{heroHeadline} </h1>
+        <p>{heroText} </p>
       </div>
     </div>
   );

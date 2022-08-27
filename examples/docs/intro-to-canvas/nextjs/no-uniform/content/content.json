@@ -4,7 +4,9 @@
     "url": "/",
     "fields": {
       "title": "Home",
-      "description": "Welcome to the Intro to Canvas tutorial site."
+      "description": "Welcome to the Intro to Canvas tutorial site.",
+      "heroHeadline": "Awesome Hero Headline",
+      "heroText": "Awesome Hero Text"
     }
   },
   {
@@ -13,7 +15,9 @@
     "type": "topic",
     "fields": {
       "title": "Development",
-      "description": "Content about development."
+      "description": "Content about development.",
+      "heroHeadline": "Awesome Hero Headline",
+      "heroText": "Awesome Hero Text"
     }
   },
   {
@@ -22,7 +26,9 @@
     "type": "topic",
     "fields": {
       "title": "Architecture",
-      "description": "Content about architecture."
+      "description": "Content about architecture.",
+      "heroHeadline": "Awesome Hero Headline",
+      "heroText": "Awesome Hero Text"
     }
   },
   {
@@ -31,7 +37,9 @@
     "type": "topic",
     "fields": {
       "title": "Andy Arch",
-      "description": "Content about Andrew."
+      "description": "Content about Andrew.",
+      "heroHeadline": "Awesome Hero Headline",
+      "heroText": "Awesome Hero Text"
     }
   },
   {
@@ -40,7 +48,9 @@
     "type": "topic",
     "fields": {
       "title": "Authoring",
-      "description": "Content about authoring."
+      "description": "Content about authoring.",
+      "heroHeadline": "Awesome Hero Headline",
+      "heroText": "Awesome Hero Text"
     }
   }
 ]

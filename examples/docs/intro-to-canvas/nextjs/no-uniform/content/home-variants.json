@@ -36,7 +36,9 @@
     "id": "personalized-for-utiquery",
     "fields": {
       "title": "Home",
-      "description": "UTI QUERY."
+      "description": "UTI QUERY.",
+      "heroHeadline": "Personalized Hero Headline",
+      "heroText": "Personalized Hero Text"
     },
     "pz": {
       "crit": [
@@ -53,7 +55,9 @@
     "id": "default",
     "fields": {
       "title": "Home",
-      "description": "As you navigate around, content will change."
+      "description": "As you navigate around, content will change. **Add uti=1 to see peronsalized hero headings",
+      "heroHeadline": "Hero Headline",
+      "heroText": "Hero Text"
     }
   }
 ]

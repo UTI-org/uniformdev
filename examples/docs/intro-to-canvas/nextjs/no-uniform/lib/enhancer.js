@@ -13,6 +13,14 @@ const dataEnhancer = async ({ component }) => {
       return { ...topic.fields };
     }
   }
+
+  const hero = component?.parameters?.hero?.value;
+  if (hero) {
+    const herotopic = content.find((e) => e.id == hero);
+    if (topic) {
+      return { ...herotopic.fields };
+    }
+  }
 };
 
 export default async function doEnhance(composition) {

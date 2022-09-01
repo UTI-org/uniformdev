@@ -6,6 +6,7 @@ function UnknownComponent({ component }) {
 }
 
 export default function resolveRenderer({ type }) {
+  console.log("in resolveRenderer..........", type);
   if (type == "defaultBody") {
     return Body;
   }

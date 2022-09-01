@@ -12,7 +12,7 @@ export default function HomeLayout({ composition }) {
         <title>Testing</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Composition data={composition} resolverenderer={resolveRenderer}>
+      <Composition data={composition} resolveRenderer={resolveRenderer}>
         <Slot name="body" />
         <Slot name="hero" />
       </Composition>

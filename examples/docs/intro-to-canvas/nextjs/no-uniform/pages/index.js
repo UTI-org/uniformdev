@@ -21,7 +21,6 @@ async function getComposition(slug, preview) {
 }
 export async function getStaticProps({ preview }) {
   const slug = "/";
-  //const topic = content.find((e) => e.url == slug);
   const composition = await getComposition(slug, preview);
 
   await doEnhance(composition);

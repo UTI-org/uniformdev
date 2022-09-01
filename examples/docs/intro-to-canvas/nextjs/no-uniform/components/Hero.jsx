@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/hero.module.css";
+import styles from "../styles/hero.module.css";
 
 const { heroContent, heroWrapper, imageWrapper } = styles;
 

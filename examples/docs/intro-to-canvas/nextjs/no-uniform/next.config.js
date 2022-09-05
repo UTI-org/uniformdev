@@ -1,13 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-};
-
-module.exports = nextConfig;
-
-// next.config.js
-module.exports = {
+  serverRuntimeConfig: {
+    uniform: {
+      apiKey: process.env.UNIFORM_API_KEY,
+      previewSecret: process.env.UNIFORM_PREVIEW_SECRET,
+    },
+  },
+  publicRuntimeConfig: {
+    uniform: {
+      projectId: process.env.UNIFORM_PROJECT_ID,
+    },
+  },
   images: {
     domains: ["www.uti.edu"],
   },
 };
+
+module.exports = nextConfig;

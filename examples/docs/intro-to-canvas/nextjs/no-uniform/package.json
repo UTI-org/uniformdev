@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@uniformdev/canvas": "^17.1.0",
+    "@uniformdev/canvas-contentstack": "^17.1.0",
     "@uniformdev/canvas-react": "^17.1.0",
     "@uniformdev/context": "^17.1.0",
     "@uniformdev/context-react": "^17.1.0",
+    "contentstack": "^3.15.3",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"

@@ -1,9 +1,10 @@
-import { enhance, EnhancerBuilder } from "@uniformdev/canvas";
+import { enhance, compose, EnhancerBuilder } from "@uniformdev/canvas";
 import {
   createContentstackEnhancer,
   CANVAS_CONTENTSTACK_PARAMETER_TYPES,
 } from "@uniformdev/canvas-contentstack";
 import contentstack from "contentstack";
+import contentStackModelConverter from "./contentstackModelConverter";
 
 export default function doEnhanceCS(composition) {
   const client = contentstack.Stack({
@@ -17,7 +18,10 @@ export default function doEnhanceCS(composition) {
     composition,
     enhancers: new EnhancerBuilder().parameterType(
       CANVAS_CONTENTSTACK_PARAMETER_TYPES,
-      createContentstackEnhancer({ client })
+      compose(
+        createContentstackEnhancer({ client }),
+        contentStackModelConverter
+      )
     ),
     context: {},
   });

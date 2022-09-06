@@ -25,6 +25,8 @@ export async function getStaticProps({ preview }) {
 
   await doEnhance(composition);
 
+  //console.log("composition............", JSON.stringify(composition, null, 2));
+
   return {
     props: {
       composition,
